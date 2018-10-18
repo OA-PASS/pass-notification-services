@@ -32,6 +32,7 @@
         <mail.skip>false</mail.skip>
         <fcrepo.skip>false</fcrepo.skip>
         <mail.server>${docker.host.address}</mail.server>
+        <mail.waitms>15000</mail.waitms>
         <fcrepo.server>${docker.host.address}</fcrepo.server>
         <es.server>${docker.host.address}</es.server>
         <pass.fedora.user>fedoraAdmin</pass.fedora.user>
@@ -40,6 +41,20 @@
         <pass.elasticsearch.host>${es.server}</pass.elasticsearch.host>
         <pass.elasticsearch.url>http://${pass.elasticsearch.host}:${es.http.port}/pass/</pass.elasticsearch.url>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>travis</id>
+            <activation>
+                <property>
+                    <name>env.TRAVIS</name>
+                </property>
+            </activation>
+            <properties>
+                <mail.waitms>60000</mail.waitms>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
 
@@ -120,7 +135,7 @@
                             <name>${docker.tvial.docker-mailserver.version}</name>
                             <run>
                                 <wait>
-                                    <time>15000</time>
+                                    <time>${mail.waitms}</time>
                                 </wait>
                                 <skip>${mail.skip}</skip>
                                 <hostname>mail</hostname>
