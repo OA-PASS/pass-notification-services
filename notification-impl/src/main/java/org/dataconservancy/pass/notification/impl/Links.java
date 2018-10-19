@@ -114,8 +114,23 @@ public class Links {
      * @return Stream containing the required link.
      */
     public static Stream<Link> required(URI href, String rel) {
-        requireNonNull(rel, format("Link relation for <%s> must not be null", href));
-        requireNonNull(href, format("Required link %s is null", rel));
+        return required("", href, rel);
+    }
+
+    /**
+     * Create a stream containing a single link that is required to exist.
+     * <p>
+     * Verifies that the provided URI is not null.
+     * </p>
+     *
+     * @param message Error message to be included if an exception is thrown.
+     * @param href URI being linked to.
+     * @param rel The link relation.
+     * @return Stream containing the required link.
+     */
+    public static Stream<Link> required(String message, URI href, String rel) {
+        requireNonNull(rel, format("%s Link relation for <%s> must not be null", message, href));
+        requireNonNull(href, format("%s Required link %s is null", message, rel));
 
         return Stream.of(new Link(href, rel));
     }

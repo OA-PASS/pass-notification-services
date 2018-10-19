@@ -140,7 +140,7 @@ public class LinksTest {
         assertTrue(concatenated.containsAll(links2));
     }
 
-    private URI randomUri() {
+    static URI randomUri() {
         return URI.create("urn:uuid:" + UUID.randomUUID().toString());
     }
 }
