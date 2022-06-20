@@ -127,8 +127,6 @@
         <codehaus.build-helper.plugin.version>1.10</codehaus.build-helper.plugin.version>
         <fabric8.docker.maven.plugin.version>0.27.2</fabric8.docker.maven.plugin.version>
         <git-commit-plugin.version>2.2.4</git-commit-plugin.version>
-        <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
-        <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <slf4j.version>1.7.25</slf4j.version>
         <logback-classic.version>1.2.3</logback-classic.version>
         <junit.version>4.12</junit.version>
@@ -487,7 +485,6 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>${maven.release.plugin.version}</version>
                     <configuration>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <pushChanges>false</pushChanges>
