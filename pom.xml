@@ -64,7 +64,7 @@
             <id>travis</id>
             <activation>
                 <property>
-                    <name>env.TRAVIS</name>
+                    <name>env.CI</name>
                 </property>
             </activation>
             <properties>
