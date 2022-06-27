@@ -64,7 +64,7 @@
             <id>travis</id>
             <activation>
                 <property>
-                    <name>env.TRAVIS</name>
+                    <name>env.CI</name>
                 </property>
             </activation>
             <properties>
@@ -136,7 +136,7 @@
         <commons-compress.version>1.15</commons-compress.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-text.version>1.4</commons-text.version>
-        <mockito.version>2.12.0</mockito.version>
+        <mockito.version>2.20.1</mockito.version>
         <okhttp.version>3.10.0</okhttp.version>
         <guava.version>23.5-jre</guava.version>
         <args4j.version>2.33</args4j.version>
