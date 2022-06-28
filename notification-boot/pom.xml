@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-      <groupId>org.dataconservancy.pass.notify</groupId>
+      <groupId>org.eclipse.pass.notify</groupId>
       <artifactId>notify-parent</artifactId>
       <version>0.1.1-SNAPSHOT</version>
     </parent>
@@ -115,33 +115,33 @@
       </dependency>
 
       <dependency>
-        <groupId>org.dataconservancy.pass.support.messaging</groupId>
+        <groupId>org.eclipse.pass.support.messaging</groupId>
         <artifactId>constants</artifactId>
       </dependency>
 
       <dependency>
-        <groupId>org.dataconservancy.pass.support.messaging</groupId>
+        <groupId>org.eclipse.pass.support.messaging</groupId>
         <artifactId>json</artifactId>
       </dependency>
 
       <dependency>
-        <groupId>org.dataconservancy.pass</groupId>
+        <groupId>org.eclipse.pass</groupId>
         <artifactId>pass-client-api</artifactId>
       </dependency>
 
       <dependency>
-        <groupId>org.dataconservancy.pass</groupId>
+        <groupId>org.eclipse.pass</groupId>
         <artifactId>pass-data-client</artifactId>
       </dependency>
 
       <dependency>
-        <groupId>org.dataconservancy.pass.notify</groupId>
+        <groupId>org.eclipse.pass.notify</groupId>
         <artifactId>notification-impl</artifactId>
         <version>${project.parent.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.dataconservancy.pass.notify</groupId>
+        <groupId>org.eclipse.pass.notify</groupId>
         <artifactId>logging-aop</artifactId>
         <version>${project.parent.version}</version>
         <scope>runtime</scope>
@@ -160,13 +160,13 @@
       </dependency>
 
       <dependency>
-        <groupId>org.dataconservancy.pass.notify</groupId>
+        <groupId>org.eclipse.pass.notify</groupId>
         <artifactId>dispatch-api</artifactId>
         <version>${project.parent.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.dataconservancy.pass.notify</groupId>
+        <groupId>org.eclipse.pass.notify</groupId>
         <artifactId>dispatch-impl</artifactId>
         <version>${project.parent.version}</version>
       </dependency>
