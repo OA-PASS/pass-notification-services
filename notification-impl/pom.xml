@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-      <groupId>org.dataconservancy.pass.notify</groupId>
+      <groupId>org.eclipse.pass.notify</groupId>
       <artifactId>notify-parent</artifactId>
       <version>0.1.1-SNAPSHOT</version>
     </parent>
@@ -35,23 +35,23 @@
         </dependency>
         
         <dependency>
-          <groupId>org.dataconservancy.pass</groupId>
+          <groupId>org.eclipse.pass</groupId>
           <artifactId>pass-authz-usertoken</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.dataconservancy.pass</groupId>
+            <groupId>org.eclipse.pass</groupId>
             <artifactId>pass-client-api</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.dataconservancy.pass.notify</groupId>
+            <groupId>org.eclipse.pass.notify</groupId>
             <artifactId>notification-model</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.dataconservancy.pass.notify</groupId>
+            <groupId>org.eclipse.pass.notify</groupId>
             <artifactId>dispatch-api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
@@ -84,7 +84,7 @@
         </dependency>
 
         <dependency>
-            <groupId>org.dataconservancy.pass</groupId>
+            <groupId>org.eclipse.pass</groupId>
             <artifactId>pass-json-adapter</artifactId>
             <scope>test</scope>
         </dependency>
