@@ -21,16 +21,16 @@
     <parent>
         <groupId>org.eclipse.pass</groupId>
         <artifactId>eclipse-pass-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.1.0-SNAPSHOT</version>
     </parent>
 
     <groupId>org.eclipse.pass.notify</groupId>
     <artifactId>notify-parent</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Notification Services</name>
     <description>Compose and dispatch notifications to users based on PASS events</description>
-    <url>https://github.com/OA-PASS/notification-services</url>
+    <url>https://github.com/eclipse-pass/notification-services</url>
 
     <licenses>
         <license>
@@ -162,7 +162,7 @@
         <docker.tvial.docker-mailserver.version>oapass/docker-mailserver:20181105</docker.tvial.docker-mailserver.version>
         <docker.ldap.version>oapass/ldap:20200610-jhu</docker.ldap.version>
 
-        <pass.jsonld.context>https://oa-pass.github.io/pass-data-model/src/main/resources/context-3.4.jsonld</pass.jsonld.context>
+        <pass.jsonld.context>https://eclipse-pass.github.io/pass-data-model/src/main/resources/context-3.4.jsonld</pass.jsonld.context>
 
         <mail.skip>false</mail.skip>
         <fcrepo.skip>false</fcrepo.skip>
@@ -861,9 +861,9 @@
     </dependencyManagement>
 
     <scm>
-        <connection>scm:git:https://github.com/OA-PASS/notification-services.git</connection>
-        <developerConnection>scm:git:https://github.com/OA-PASS/notification-services.git</developerConnection>
-        <url>https://github.com/OA-PASS/notification-services</url>
+        <connection>scm:git:https://github.com/eclipse-pass/notification-services.git</connection>
+        <developerConnection>scm:git:https://github.com/eclipse-pass/notification-services.git</developerConnection>
+        <url>https://github.com/eclipse-pass/notification-services</url>
         <tag>HEAD</tag>
     </scm>
 

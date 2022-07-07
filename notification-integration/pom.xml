@@ -21,7 +21,7 @@
     <parent>
       <groupId>org.eclipse.pass.notify</groupId>
       <artifactId>notify-parent</artifactId>
-      <version>0.1.1-SNAPSHOT</version>
+      <version>0.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>notification-integration</artifactId>
