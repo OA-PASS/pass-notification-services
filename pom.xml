@@ -101,13 +101,13 @@
         <javamail.version>1.6.2</javamail.version>
         <aspectjrt.version>1.9.1</aspectjrt.version>
 
-        <docker.fcrepo.version>oapass/fcrepo:4.7.5-3.4</docker.fcrepo.version>
-        <docker.indexer.version>oapass/indexer:0.0.18-3.4</docker.indexer.version>
+        <docker.fcrepo.version>oapass/fcrepo:0.1.0@sha256:749cdb6d44ed723f7bd0886a75190f79353078cf4738aa290e5ec1176a9340e4</docker.fcrepo.version>
+        <docker.indexer.version>oapass/indexer:0.1.0@sha256:5ad45a9d227d9e48a607d9344b72a6bf9eeb66388a8088794bdbd5e4eab5de2d</docker.indexer.version>
         <docker.elasticsearch.version>docker.elastic.co/elasticsearch/elasticsearch-oss:6.2.3</docker.elasticsearch.version>
         <docker.tvial.docker-mailserver.version>oapass/docker-mailserver:20181105-1</docker.tvial.docker-mailserver.version>
         <docker.ldap.version>oapass/ldap:20200610-jhu</docker.ldap.version>
 
-        <pass.jsonld.context>https://eclipse-pass.github.io/pass-data-model/src/main/resources/context-3.4.jsonld</pass.jsonld.context>
+        <pass.jsonld.context>https://eclipse-pass.github.io/pass-data-model/src/main/resources/context-3.5.jsonld</pass.jsonld.context>
 
         <mail.skip>false</mail.skip>
         <fcrepo.skip>false</fcrepo.skip>
