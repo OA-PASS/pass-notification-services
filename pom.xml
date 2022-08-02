@@ -101,13 +101,7 @@
         <javamail.version>1.6.2</javamail.version>
         <aspectjrt.version>1.9.1</aspectjrt.version>
 
-        <docker.fcrepo.version>oapass/fcrepo:4.7.5-3.4</docker.fcrepo.version>
-        <docker.indexer.version>oapass/indexer:0.0.18-3.4</docker.indexer.version>
-        <docker.elasticsearch.version>docker.elastic.co/elasticsearch/elasticsearch-oss:6.2.3</docker.elasticsearch.version>
-        <docker.tvial.docker-mailserver.version>oapass/docker-mailserver:20181105-1</docker.tvial.docker-mailserver.version>
-        <docker.ldap.version>oapass/ldap:20200610-jhu</docker.ldap.version>
-
-        <pass.jsonld.context>https://eclipse-pass.github.io/pass-data-model/src/main/resources/context-3.4.jsonld</pass.jsonld.context>
+        <pass.jsonld.context>https://eclipse-pass.github.io/pass-data-model/src/main/resources/context-3.5.jsonld</pass.jsonld.context>
 
         <mail.skip>false</mail.skip>
         <fcrepo.skip>false</fcrepo.skip>
@@ -600,7 +594,7 @@
 
                             <image>
                                 <alias>mail</alias>
-                                <name>${docker.tvial.docker-mailserver.version}</name>
+                                <name>${it.image.mail.name}</name>
                                 <run>
                                     <wait>
                                         <time>${mail.waitms}</time>
@@ -654,7 +648,7 @@
 
                             <image>
                                 <alias>fcrepo</alias>
-                                <name>${docker.fcrepo.version}</name>
+                                <name>${it.image.fcrepo.name}</name>
                                 <run>
                                     <skip>${fcrepo.skip}</skip>
                                     <wait>
@@ -681,7 +675,7 @@
 
                             <image>
                                 <alias>ldap</alias>
-                                <name>${docker.ldap.version}</name>
+                                <name>${it.image.ldap.name}</name>
                                 <run>
                                     <skip>${ldap.skip}</skip>
                                     <wait>
